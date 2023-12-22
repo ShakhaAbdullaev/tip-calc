@@ -5,10 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Tip Calculator</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+           -webkit-appearance: none;
+        }
+     </style>
 </head>
 <body>
-    
 
+    <div class="container">
+
+        <div class="box">
+
+            <h1 class="box_head">Tip-Calculator</h1>
+
+            <p class="box_text">Enter the bill amount and tip percentage to calculate the total</p>
+
+            <p class="box_desc">Bill amount:</p>
+
+            <input class="bill_input" type="number" required>
+
+            <p class="box_percentage">Tip percentage</p>
+
+            <input class="tip_percentage_input" type="number" required>
+
+            <button class="calc_btn">Calculate</button>
+
+            <p class="total">Total: <span class="calc_amount"></span></p>
+
+        </div>
+
+    </div>
+
+    
 
 
     <script src="script.js"></script>
