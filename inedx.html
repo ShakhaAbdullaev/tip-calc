@@ -24,15 +24,15 @@
 
             <p class="box_desc">Bill amount:</p>
 
-            <input class="bill_input" type="number" required>
+            <input class="bill_input" type="number" required id="bill">
 
             <p class="box_percentage">Tip percentage</p>
 
-            <input class="tip_percentage_input" type="number" required>
+            <input class="tip_percentage_input" type="number" required id="tip">
 
-            <button class="calc_btn">Calculate</button>
+            <button class="calc_btn" id="calculate" onclick="calculateTotal()">Calculate</button>
 
-            <p class="total">Total: <span class="calc_amount"></span></p>
+            <p class="total">Total: <span id="total">$</span></p>
 
         </div>
 

@@ -73,5 +73,6 @@ body{
 .total {
 }
 
-.Calc_amount {
+#total {
+    font-weight: 600;
 }

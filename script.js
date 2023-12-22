@@ -1,5 +1,15 @@
-let input = document.getElementsByClassName('.bill_input');
-let tip = document.getElementsByClassName('.tip_percentage_input');
-let calculate = document.getElementsByClassName('.calc_btn');
-let result = document.getElementsByClassName('.calc_amount');
+let billInput = document.getElementById('bill');
+let tipInput = document.getElementById('tip');
+let calcBtn = document.getElementById('calculate');
+let result = document.getElementById('total');
 
+
+
+function calculateTotal() {
+    
+    let billValue = billInput.value;
+    let tipValue = tipInput.value;
+    let totalValue = billValue*(1+tipValue/100);
+    
+    result.innerHTML = `$ ${totalValue.toLocaleString()}`;
+};
